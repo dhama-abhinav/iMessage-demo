@@ -1,0 +1,64 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+    /* background-color:#D0DB97; */
+    color: white;
+    height: 100vh;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/acb65873426833.5c08f5634f7fb.png');
+}
+.chat__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+    background-color: darkgrey;
+}
+.chat__header>strong{
+    margin-right: 10px;
+}
+.chat__input>form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    border: 1px solid grey;
+    /* border-radius: 999px; */
+    background-color: #a39292;
+
+}
+.chat__input>form>input{
+    flex: 1;
+    outline-width: 0;
+    border: none;
+    background: transparent;
+    background-color: rgb(219, 181, 208);
+    height: 25px;
+    border-radius: 99px;
+    color: white;
+}
+.chat__input>form>button{
+    display: none;
+}
+.chat__messages{
+    flex: 1;
+}
+.chat__inputMicIcon{
+    cursor: pointer;
+    margin-left: 5px;
+}
+.chat__messages{
+    overflow: scroll;
+}
+/* hiding the scrollbar for chrome,safari and opera */
+.chat__messages::-webkit-scrollbar{
+    display: none;
+}
+/* hiding scrollbar for IE, Edge and firefox */
+.chat__messages{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

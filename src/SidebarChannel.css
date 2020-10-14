@@ -1,0 +1,20 @@
+.channel{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.channel:hover{
+    background-color: rgb(139, 117, 236);
+}
+.channel__info{
+    position: relative;
+    margin-left: 15px;
+    width: 100%;
+    color: rgb(71, 68, 68);
+}
+.channel__info>small{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
